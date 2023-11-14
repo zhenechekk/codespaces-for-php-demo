@@ -1,27 +1,11 @@
+<p> Дата и время:
 <?php
+    // Устанавливаем временную зону (по желанию)
+    date_default_timezone_set('Europe/Moscow');
 
-/*----------------------------------------------------------------------------------------
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License. See LICENSE in the project root for license information.
- *---------------------------------------------------------------------------------------*/
+    // Получаем текущую дату и время
+    $d = date("d.m.Y H:i");
 
-function sayHello($name) {
-	echo "Hello $name!";
-}
-
+    // Выводим на экран
+    echo $d;
 ?>
-
-<html>
-	<head>
-		<title>Visual Studio Code Remote :: PHP</title>
-	</head>
-	<body>
-		<?php 
-		
-		sayHello('remote world');
-			
-		phpinfo(); 
-			
-		?>
-	</body>
-</html>
